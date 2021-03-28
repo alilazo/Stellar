@@ -1,0 +1,20 @@
+/*
+https://flatuicolors.com/palette/se
+https://fonts.google.com/specimen/Titillium+Web?preview.text_type=custom
+*/
+
+body {
+    background-color: #1e272e;
+}
+
+.title {
+    color: #34ace0;
+    font-family: 'Titillium Web', sans-serif;
+    margin: -10px;
+}
+
+.subTitle {
+    color: #d1ccc0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 70%;
+}
