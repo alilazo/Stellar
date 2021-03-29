@@ -3,18 +3,44 @@ https://flatuicolors.com/palette/se
 https://fonts.google.com/specimen/Titillium+Web?preview.text_type=custom
 */
 
+body, html, p, h1 {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    color: #2d3436;
+}
+
+
 body {
-    background-color: #1e272e;
+    background-color: #dfe6e9;
 }
 
 .title {
     color: #34ace0;
-    font-family: 'Titillium Web', sans-serif;
-    margin: -10px;
+}
+
+.mainBlock {
+    height: 200px;
+    width: 500px;
+    background-color: #555;
+}
+
+.bgimg {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./Assets/Pictures/skyPhotoStars.png');
+    min-height: 50%;
+}
+
+.styleBarButton {
+    color: #f5f6fa;
 }
 
 .subTitle {
     color: #d1ccc0;
-    font-family: 'Titillium Web', sans-serif;
     font-size: 70%;
 }
