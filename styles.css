@@ -3,9 +3,10 @@ https://flatuicolors.com/palette/se
 https://fonts.google.com/specimen/Titillium+Web?preview.text_type=custom
 */
 
-body, html, p, h1 {
+body, html {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+
 }
 
 h1 {
@@ -18,13 +19,8 @@ body {
 }
 
 .title {
-    color: #34ace0;
-}
-
-.mainBlock {
-    height: 200px;
-    width: 500px;
-    background-color: #555;
+    font-weight: 500;
+    color: #51cbff;
 }
 
 .bgimg {
@@ -33,14 +29,35 @@ body {
     background-position: center;
     background-size: cover;
     background-image: url('./Assets/Pictures/skyPhotoStars.png');
-    min-height: 50%;
+    min-height: 100%;
 }
 
 .styleBarButton {
-    color: #f5f6fa;
+    color: #dfe4ea;
 }
 
 .subTitle {
-    color: #d1ccc0;
+    color: #dfe4ea;
+    font-weight: 500;
     font-size: 70%;
+}
+
+.TermsFooter {
+    list-style: none;
+    color: #747d8c;
+}
+
+.slogan{
+    color: #dfe4ea;
+}
+
+.arrowImg{
+    position: relative;
+    top: 8em;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg);
 }
