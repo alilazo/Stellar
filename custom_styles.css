@@ -3,10 +3,13 @@ https://flatuicolors.com/palette/se
 https://fonts.google.com/specimen/Titillium+Web?preview.text_type=custom
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, html {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-
 }
 
 h1 {
@@ -16,6 +19,14 @@ h1 {
 
 body {
     background-color: #dfe6e9;
+}
+
+.mainLogo{
+    transition: 200ms ease-in-out;
+}
+
+.mainLogo:hover{
+    transform: rotate(-90deg);
 }
 
 .title {
@@ -29,10 +40,12 @@ body {
     background-position: center;
     background-size: cover;
     background-image: url('./Assets/Pictures/skyPhotoStars.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100%;
 }
 
-.styleBarButton {
+.contactBarButton, .styleBarButton {
     color: #dfe4ea;
 }
 
@@ -40,11 +53,6 @@ body {
     color: #dfe4ea;
     font-weight: 500;
     font-size: 70%;
-}
-
-.TermsFooter {
-    list-style: none;
-    color: #747d8c;
 }
 
 .slogan{
@@ -60,4 +68,46 @@ body {
     height: auto;
     transform: translate(-50%, -50%);
     transform: rotate(-90deg);
+}
+
+.exploreBtn {
+    position: relative;
+    margin-top: 7em;
+    width: 300px;
+    background-color: #51cbff;
+    opacity: 1;
+    transition: 150ms linear;
+}
+
+.exploreBtn:hover {
+    opacity: 0.5;
+    transform: translateY(-10px);
+}
+
+#why p {
+    font-size: medium;
+}
+
+.phoneNavBar {
+    cursor: pointer;
+    background-color: #2d3436;
+}
+
+#dropdownClick{
+    background-color: #2d3436;
+}
+
+.TermsFooter {
+    list-style: none;
+    color: #747d8c;
+    margin-bottom: 10px;
+}
+
+.bottomFooter {
+    color: #dfe4ea;
+    background-color: #2d3436;
+}
+
+.greyfont {
+    color: #636e72;
 }

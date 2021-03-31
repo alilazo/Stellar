@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Assets/logo2.ico">
+    <link rel="icon" href="Assets/logo4_Black.ico">
     <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom_styles.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="assentials.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Stellar web service</title>
 </head>
 <body>
+
     <!--Nav bar-->
-    <div class="w3-top">
+    <div class="w3-top" style="background-color: #2d3436;">
         <div class="w3-bar w3-hide-small">
-            <h1 class="w3-bar-item title w3-left w3-animate-top">STELLAR</h1>
-            <div class="w3-right">
-                <!--<h1 class="w3-bar-item styleBarButton">About</h1>-->
+            <!--<h5 class="w3-bar-item title w3-left w3-animate-top">STELLAR</h5>-->
+            <img class="w3-image w3-margin mainLogo" src="./Assets/logo3.png"  width="30px" height="30px">
+            <div class="w3-right w3-padding-large">
+                <a href="" class="w3-bar-item w3-button w3-margin-right styleBarButton">WHAT WE DO</a>
+                <a href="" class="w3-bar-item w3-button w3-margin-right styleBarButton">WHO ARE WE</a>
+                <a href="" class="w3-bar-item w3-button w3-round exploreBtn contactBarButton" style="margin: 0 0; color: #3e4547;">CONTACT STELLAR</a>
             </div>
+        </div>
+
+        <!--for mobile-->
+        <div class="w3-bar w3-hide-large w3-hide-medium">
+            <button onclick="w3_open()" class="w3-left w3-bar-item w3-animate-top phoneNavBar"><l class="fa fa-bars w3-xxlarge"></l></button>
+            <img class="w3-image w3-right w3-animate-top" src="./Assets/logo3.png"  width="30px" height="30px" style="margin: 12px 12px;">
         </div>
     </div>
 
+    <!--Side bar MOBILE-->
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; background-color: #d5dbdd;" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large" style="background-color: #3e4547; color: #d5dbdd;"><h3>CLOSE &times;</h3></button>
+        <a href="#" class="w3-bar-item w3-button"><h3>WHAT WE DO</h3></a>
+        <a href="#" class="w3-bar-item w3-button"><h3>WHO ARE WE</h3></a>
+        <a href="#" class="w3-bar-item w3-button"><h3>CONTACT STELLAR</h3></a>
+    </div>
+
     <!--Stellar body pic-->
-    <div class="bgimg w3-display-container w3-card-4" id="home">
+    <div class="bgimg w3-display-container" id="home">
         <div class="w3-display-middle w3-center" >
             <h1 class="title w3-animate-left" style="margin: 0; font-size: 5rem;">STELLAR <b class="subTitle w3-animate-right w3-hide-small">Web Service</b></h1>
             <!--<p class="w3-center" style="color: #aaa69d; margin: -20px;">Owner: Amado Lazo</p>-->
@@ -31,21 +52,59 @@
                 <h3 class="slogan"><i>"Helping elevate your business"</i></h3>
             </div>
             <div class="w3-center">
-                <img class="arrowImg" src="./Assets/arrow.png">
+                <!--<img class="arrowImg" src="./Assets/arrow.png">-->
+                <a href="#why"><div class="exploreBtn w3-button w3-round w3-large">Explore</div></a>
             </div>
         </div>
     </div>
 
-    <div class="w3-container">
-        <h3 class="w3-center" style="margin-top: 3em;">Why do you need a web service?</h3>
+    <div class="w3-content w3-padding" id="why">
+        <h2 class="w3-center" style="margin-top: 3em; border-bottom: 1px solid;"><b>Why Do You Need A Web Service?</b></h2>
+        <p>Our web services allow various applications to talk to each other and share data and services among themselves. We host and perpare webpages to your liking with our dedicated servers. </p>
+        <p>We also provide web development packages. Having a website and online presence strategy allows you to market your business online. A website is also important because it helps to establish credibility as a business. A website not only gives credibility but it also helps to give a positive impression that your company is bigger and more successful.</p>
+        <div class="w3-row">
+            <p class="w3-quarter"><i class="fa fa-rocket w3-xlarge"></i> Cutting-Edge Technology</p>
+            <p class="w3-quarter"><i class="fa fa-commenting-o w3-xlarge"></i> Transparent & fair</p>
+        </div>
+    </div>
+
+    <div style="background-color: #d5dbdd;" class="w3-card">
+    <div class="w3-content w3-padding" id="what" style="margin-top: 50px;">
+        <h2 class="w3-center"><b>What We Do</b></h2>
+
+        <div class="w3-row">
+            <div class="w3-half">
+                <h2 style="color: #2d3436;"><b>Design, Development and Deployment.</b></h2>
+                <h5 class="greyfont"><b>Custom fully programmed websites built from the ground up.</b></h5>
+                <ul>
+                    <li><h5>All Designs are Guaranteed</h5></li>
+                    <li><h5>Each website is handcrafted to the business specific needs</h5></li>
+                    <li><h5>Speed-optimized for fast user experiences</h5></li>
+                    <li><h5>SEO-friendly websites built around your target keywords and phrases</h5></li>
+                    <li><h5>Special designated domain name</h5></li>
+                    <li><h5>Responsive for mobile devices and tablets</h5></li>
+                </ul>
+            </div>
+            <div class="w3-half">
+                <img class="w3-image" src="./Assets/index Pictures/web-dev.png">
+            </div>
+        </div>
+    </div>
     </div>
     <!-- Helping elevate your business -->
     <!--Footer-->
-    <footer class="w3-container" style="margin-top: 20px;">
-        <h5>&copy; 2021, Stellar Web Service LLC. Amado Lazo</h5>
-        <div class="TermsFooter">
-            <li><a href="">Terms of Service</a></li>
-            <li><a href="">Privacy Policy</a></li>
+    <footer class="w3-container bottomFooter" style="padding-left: 0;">
+        <div class="w3-row">
+            <div class="w3-half w3-padding" style="background-color: #3e4547;">
+                <h5>&copy; 2021, Stellar Web Service LLC. Amado Lazo</h5>
+                <img class="w3-image w3-margin-bottom" src="./Assets/logo3.png" width="50px" height="50px">
+            </div>
+            <div class="w3-quarter w3-padding">
+                <li class="TermsFooter"><a href="">Terms of Service</a></li>
+            </div>
+            <div class="w3-quarter w3-padding">
+                <li class="TermsFooter"><a href="">Privacy Policy</a></li>
+            </div>
         </div>
     </footer>
 </body>
