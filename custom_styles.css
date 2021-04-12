@@ -16,6 +16,19 @@ h1 {
     color: #2d3436;
 }
 
+.stellarWhite {
+    color: #dfe6e9;
+}
+
+.stellarCardBlack {
+    color: #dfe6e9;
+    background-color: #2d3436;
+}
+
+.stellarCardWhite {
+    color: #2d3436;
+    background-color: #dfe6e9;
+}
 
 body {
     background-color: #dfe6e9;
@@ -32,6 +45,14 @@ body {
 .title {
     font-weight: 500;
     color: #51cbff;
+}
+
+ul li {
+    color: #51cbff;
+}
+
+ul li h5 {
+    color: black;
 }
 
 .bgimg {

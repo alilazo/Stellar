@@ -36,7 +36,7 @@
     </div>
 
     <!--Side bar MOBILE-->
-    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; background-color: #d5dbdd;" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none; background-color: #d5dbdd;" id="mySidebar">
         <button onclick="w3_close()" class="w3-bar-item w3-large" style="background-color: #3e4547; color: #d5dbdd;"><h3>CLOSE &times;</h3></button>
         <a href="#" class="w3-bar-item w3-button"><h3>WHAT WE DO</h3></a>
         <a href="#" class="w3-bar-item w3-button"><h3>WHO ARE WE</h3></a>
@@ -47,17 +47,16 @@
     <div class="bgimg w3-display-container" id="home">
         <div class="w3-display-middle w3-center" >
             <h1 class="title w3-animate-left" style="margin: 0; font-size: 5rem;">STELLAR <b class="subTitle w3-animate-right w3-hide-small">Web Service</b></h1>
-            <!--<p class="w3-center" style="color: #aaa69d; margin: -20px;">Owner: Amado Lazo</p>-->
             <div class="w3-center" style="margin-top: 2em;">
                 <h3 class="slogan"><i>"Helping elevate your business"</i></h3>
             </div>
             <div class="w3-center">
-                <!--<img class="arrowImg" src="./Assets/arrow.png">-->
                 <a href="#why"><div class="exploreBtn w3-button w3-round w3-large">Explore</div></a>
             </div>
         </div>
     </div>
 
+    <!--Why do you need a web service-->
     <div class="w3-content w3-padding" id="why">
         <h2 class="w3-center" style="margin-top: 3em; border-bottom: 1px solid;"><b>Why Do You Need A Web Service?</b></h2>
         <p>Our web services allow various applications to talk to each other and share data and services among themselves. We host and perpare webpages to your liking with our dedicated servers. </p>
@@ -68,30 +67,101 @@
         </div>
     </div>
 
+    <!--What We Do-->
     <div style="background-color: #d5dbdd;" class="w3-card">
-    <div class="w3-content w3-padding" id="what" style="margin-top: 50px;">
-        <h2 class="w3-center"><b>What We Do</b></h2>
-
-        <div class="w3-row">
-            <div class="w3-half">
-                <h2 style="color: #2d3436;"><b>Design, Development and Deployment.</b></h2>
-                <h5 class="greyfont"><b>Custom fully programmed websites built from the ground up.</b></h5>
-                <ul>
-                    <li><h5>All Designs are Guaranteed</h5></li>
-                    <li><h5>Each website is handcrafted to the business specific needs</h5></li>
-                    <li><h5>Speed-optimized for fast user experiences</h5></li>
-                    <li><h5>SEO-friendly websites built around your target keywords and phrases</h5></li>
-                    <li><h5>Special designated domain name</h5></li>
-                    <li><h5>Responsive for mobile devices and tablets</h5></li>
-                </ul>
-            </div>
-            <div class="w3-half">
-                <img class="w3-image" src="./Assets/index Pictures/web-dev.png">
+        <div class="w3-content w3-padding" id="what" style="margin-top: 50px;">
+            <h2 class="w3-center"><b>What We Do</b></h2>
+            <div class="w3-row">
+                <div class="w3-half">
+                    <h2 style="color: #2d3436;"><b>Design, Development and Deployment.</b></h2>
+                    <h5 class="greyfont"><b>Custom fully programmed websites built from the ground up.</b></h5>
+                    <ul>
+                        <li><h5>All Designs are Guaranteed</h5></li>
+                        <li><h5>Each website is handcrafted to the business specific needs</h5></li>
+                        <li><h5>Speed-optimized for fast user experiences</h5></li>
+                        <li><h5>SEO-friendly websites built around your target keywords and phrases</h5></li>
+                        <li><h5>Special designated domain name</h5></li>
+                        <li><h5>Responsive for mobile devices and tablets</h5></li>
+                    </ul>
+                </div>
+                <div class="w3-half">
+                    <img class="w3-image" src="./Assets/index Pictures/web-dev.png">
+                </div>
             </div>
         </div>
     </div>
+
+    <!--Services we offer-->
+    <div style="background-color: #51cbff; padding-top: 50px;">
+        <div class="w3-content w3-padding" id="services">
+            <h1 class="w3-center stellarWhite"><b>Services We Offer</b></h1>
+            <p class="w3-center" style="color: #2d3436;">These are our main services that we offer. Please contact us if these do not meet your specific needs.</p>
+
+                <!-- Pricing Tables -->
+                <div class="w3-row-padding" id="pricing" style="margin-top: 100px;">
+                    <div class="w3-third w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center">
+                            <li class="stellarCardBlack w3-xlarge w3-padding-32">Custom Website</li>
+                            <li class="stellarCardWhite w3-padding-16">
+                                <p>Hand-crafted to the customers liking. Built from the ground up and easy to update.</p>
+                                <a href="" class="w3-button w3-round" style="color: #2d3436; background-color: #51cbff;">Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="w3-third w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center">
+                            <li class="stellarCardBlack w3-xlarge w3-padding-32">Fix It Up</li>
+                            <li class="stellarCardWhite w3-padding-16">
+                                <p>Hand-crafted to the customers liking. Built from the ground up and easy to update.</p>
+                                <a href="" class="w3-button w3-round" style="color: #2d3436; background-color: #51cbff;">Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="w3-third w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center">
+                            <li class="stellarCardBlack w3-xlarge w3-padding-32">Make It Together</li>
+                            <li class="stellarCardWhite w3-padding-16">
+                                <p>Hand-crafted to the customers liking. Built from the ground up and easy to update.</p>
+                                <a href="" class="w3-button w3-round" style="color: #2d3436; background-color: #51cbff;">Details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center">
+                            <li class="stellarCardBlack w3-xlarge w3-padding-32">Stellar Maintenence Service</li>
+                            <li class="stellarCardWhite w3-padding-16">
+                                <p>Hand-crafted to the customers liking. Built from the ground up and easy to update.</p>
+                                <a href="" class="w3-button w3-round" style="color: #2d3436; background-color: #51cbff;">Details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center">
+                            <li class="stellarCardBlack w3-xlarge w3-padding-32">Domain<br>Names</li>
+                            <li class="stellarCardWhite w3-padding-16">
+                                <p>Hand-crafted to the customers liking. Built from the ground up and easy to update.</p>
+                                <a href="" class="w3-button w3-round" style="color: #2d3436; background-color: #51cbff;">Details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center">
+                            <li class="stellarCardBlack w3-xlarge w3-padding-32">Website Redesign and Repair</li>
+                            <li class="stellarCardWhite w3-padding-16">
+                                <p>Hand-crafted to the customers liking. Built from the ground up and easy to update.</p>
+                                <a href="" class="w3-button w3-round" style="color: #2d3436; background-color: #51cbff;">Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
     </div>
-    <!-- Helping elevate your business -->
+
     <!--Footer-->
     <footer class="w3-container bottomFooter" style="padding-left: 0;">
         <div class="w3-row">
